@@ -218,3 +218,106 @@
 // console.log(abbreviate('how are you')); // => 'how are you'
 
 
+// function adults(people) {
+//     let arr = [];
+
+//     for (let person of people) {
+        
+//         if(person.age >= 18) {
+//             arr.push(person.name);
+//         }
+//     }
+
+//     return arr;
+// }
+
+
+
+
+// const ppl = [
+//     {name: 'John', age: 20},
+//     {name: 'Jim', age: 13},
+//     {name: 'Jane', age: 18},
+//     {name: 'Bob', age: 7}
+//   ];
+  
+//   console.log(adults(ppl)); // => [ 'John', 'Jane' ]
+
+
+
+
+// function countScores(people) {
+
+//     let obj = {};
+
+    
+//     people.map(person => {
+       
+//         if(obj.hasOwnProperty(person.name) == false) {
+//             obj[person.name] = person.score
+//         } else {
+//             obj[person.name] += person.score;
+//         }
+        
+        
+//     });
+
+//     return obj;
+// }
+
+
+
+
+
+
+// const ppl = [
+//     { name: "Anthony", score: 10 },
+//     { name: "Fred", score : 10 },
+//     { name: "Anthony", score: -8 },
+//     { name: "Winnie", score: 12 }
+//   ];
+//   console.log(countScores(ppl)); // => { Anthony: 2, Fred: 10, Winnie: 12 }
+  
+//   // Example 2
+//   const peeps = [
+//     { name: "Anthony", score: 2 },
+//     { name: "Winnie", score: 2 },
+//     { name: "Fred", score: 2 },
+//     { name: "Winnie", score: 2 },
+//     { name: "Fred", score: 2 },
+//     { name: "Anthony", score: 2 },
+//     { name: "Winnie", score: 2 }
+//   ];
+  
+//   console.log(countScores(peeps)); // => { Anthony: 4, Fred: 4, Winnie: 6 }
+
+function isPrime(number) {
+
+    for (let i = 2; i < number; i += 1) {
+        if (number % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+function firstNPrimes(n) {
+
+    let arr = [];
+    let count = 2;
+    while(arr.length < n) {
+        if(isPrime(count)) {
+            arr.push(count);
+        }
+        count += 1;
+    }
+    return arr;
+}
+
+
+
+
+console.log(firstNPrimes(0));  // => []
+console.log(firstNPrimes(1));  // => [2]
+console.log(firstNPrimes(4));  // => [2, 3, 5, 7]
