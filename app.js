@@ -381,14 +381,139 @@
 // console.log(arr2) // => [[1, 3]]
 
 
-function zipArray(arr1, arr2) {
+// function zipArray(arr1, arr2) {
+
+//     let arr = [];
+//     for(let i = 0; i < arr1.length; i += 1) {
+//         arr.push([arr1[i], arr2[i]]);
+//     }
+//     return arr;
+
+// }
+
+// const a1 = ['a', 'b', 'c', 'd'];
+// const a2 = [10, 20, 30, 40];
+
+// const result = zipArray(a1, a2);
+// console.log(result); // => [ [ 'a', 10 ], [ 'b', 20 ], [ 'c', 30 ], [ 'd', 40 ] ]
 
 
-    
-}
+// function twoDimensionalTotal(arr) {
 
-const a1 = ['a', 'b', 'c', 'd'];
-const a2 = [10, 20, 30, 40];
+//     let sum = 0;
 
-const result = zipArray(a1, a2);
-console.log(result); // => [ [ 'a', 10 ], [ 'b', 20 ], [ 'c', 30 ], [ 'd', 40 ] ]
+//     for(let i = 0; i < arr.length; i += 1) {
+//         for(let j = 0; j < arr[i].length; j += 1) {
+//             sum += arr[i][j];
+//         }
+//     }
+//     return sum;
+// }
+
+
+
+
+
+// const arr1 = [
+//     [5, 2, 5, 3],
+//     [12, 13],
+//   ];
+  
+//   console.log(twoDimensionalTotal(arr1));  // => 40
+  
+//   const arr2 = [
+//     [2],
+//     [1, 9],
+//     [1, 1, 1]
+//   ]
+  
+//   console.log(twoDimensionalTotal(arr2));  // => 15
+
+
+
+// function countInnerElement(array) {
+//     let obj = {};
+//     for(let i = 0; i < array.length; i += 1) {
+//         for(let j = 0; j < array[i].length; j += 1) {
+//             if(obj[array[i][j]] == undefined) {
+//                 obj[array[i][j]] = 1;
+//             } else {
+//                 obj[array[i][j]] += 1;
+//             }
+//         }
+        
+//     }
+
+//     return obj;
+// }
+
+
+
+// const arr1 = [
+//     [1, 2, 4, 5],
+//     [2, 7, 4],
+//     [1, 4, 5, 2, 7]
+//   ]
+  
+//   console.log(countInnerElement(arr1))  // => {1: 2, 2: 3, 4: 3, 5: 2, 7: 2}
+  
+//   const arr2 = [
+//     ['a','b','c','d'],
+//     ['a','b'],
+//     ['a','c','d','a']
+//   ]
+  
+//   console.log(countInnerElement(arr2))  // => {a: 4, b: 2, c: 2, d: 2}
+
+
+// function twoDiff(arr) {
+//     let arrs = [];
+//     for(let i = 0; i < arr.length; i += 1) {
+//         let nArr = [];
+//         for(let j = i + 1; j < arr.length; j += 1 ) {
+            
+//             if ((arr[i] - arr[j]) == 2 || (arr[j] - arr[i]) == 2) {
+//                 arrs.push([i, j]);
+//             }
+//         }
+//         if(nArr.length == 0) {
+//             continue;
+//         }
+//         // arrs.push(nArr);
+//         // nArr= [];
+//     }
+
+//     return arrs;
+// }
+
+
+
+
+// console.log(twoDiff([2, 3, 4, 6, 1, 7]))  // => [[0, 2], [1, 4], [2, 3]]
+// console.log(twoDiff([0, 2, 4, 3, 5]))  // => [[0, 1], [1, 2], [3,4]]
+// console.log(twoDiff([]))  // => []
+
+// function arrayDiff(arr1, arr2) {
+//     let arr = [];
+//     for(let i = 0; i < arr1.length; i += 1) {
+
+//         if(arr2.includes(arr1[i])) {
+//             continue;
+//         } else {
+//             arr.push(arr1[i]);
+//         }
+//     }
+
+//     return arr;
+// }
+
+
+
+
+// const array1 = [1, 23, 2, 43, 3, 4]
+// const array2 = [3, 23]
+// console.log(arrayDiff(array1, array2))  // => [1, 2, 43 ,4]
+
+// const array3 = ['a', 'ab', 'c', 'd', 'c']
+// const array4 = ['d']
+// console.log(arrayDiff(array3, array4))  // => ['a', 'ab', 'c', 'c']
