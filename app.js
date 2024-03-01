@@ -348,18 +348,47 @@
 // console.log(peakFinder([4, 6, 9, 4, 2, -7, 2, -4, 5])); // => [2, 6, 8]
 
 
-function divisibleByThreePairSum(arr) {
+// function divisibleByThreePairSum(arr) {
+//     let arrs = [];
+//     for(let i = 0; i < arr.length; i += 1) {
+//         let nArr = [];
+//         for(let j = i + 1; j < arr.length; j += 1 ) {
+            
+//             if ((arr[i] + arr[j]) % 3 == 0) {
+//                 arrs.push([i, j]);
+//             }
+//         }
+//         if(nArr.length == 0) {
+//             continue;
+//         }
+//         // arrs.push(nArr);
+//         // nArr= [];
+//     }
+
+//     return arrs;
+// }
+
+
+
+
+
+
+
+// const arr1 = divisibleByThreePairSum([1, 6, 3, 4, 2, 0]);
+// console.log(arr1) // => [[0, 4], [1, 2], [1, 5], [2, 5], [3, 4]]
+
+// const arr2 = divisibleByThreePairSum([8, 3, 5, 9, 2]);
+// console.log(arr2) // => [[1, 3]]
+
+
+function zipArray(arr1, arr2) {
+
+
     
 }
 
+const a1 = ['a', 'b', 'c', 'd'];
+const a2 = [10, 20, 30, 40];
 
-
-
-
-
-
-const arr1 = divisibleByThreePairSum([1, 6, 3, 4, 2, 0]);
-console.log(arr1) // => [[0, 4], [1, 2], [1, 5], [2, 5], [3, 4]]
-
-const arr2 = divisibleByThreePairSum([8, 3, 5, 9, 2]);
-console.log(arr2) // => [[1, 3]]
+const result = zipArray(a1, a2);
+console.log(result); // => [ [ 'a', 10 ], [ 'b', 20 ], [ 'c', 30 ], [ 'd', 40 ] ]
