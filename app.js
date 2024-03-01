@@ -291,33 +291,60 @@
   
 //   console.log(countScores(peeps)); // => { Anthony: 4, Fred: 4, Winnie: 6 }
 
-function isPrime(number) {
+// function isPrime(number) {
 
-    for (let i = 2; i < number; i += 1) {
-        if (number % i === 0) {
-            return false;
-        }
-    }
+//     for (let i = 2; i < number; i += 1) {
+//         if (number % i === 0) {
+//             return false;
+//         }
+//     }
 
-    return true;
-}
+//     return true;
+// }
 
-function firstNPrimes(n) {
+// function firstNPrimes(n) {
 
-    let arr = [];
-    let count = 2;
-    while(arr.length < n) {
-        if(isPrime(count)) {
-            arr.push(count);
-        }
-        count += 1;
-    }
-    return arr;
-}
-
-
+//     let arr = [];
+//     let count = 2;
+//     while(arr.length < n) {
+//         if(isPrime(count)) {
+//             arr.push(count);
+//         }
+//         count += 1;
+//     }
+//     return arr;
+// }
 
 
-console.log(firstNPrimes(0));  // => []
-console.log(firstNPrimes(1));  // => [2]
-console.log(firstNPrimes(4));  // => [2, 3, 5, 7]
+
+
+// console.log(firstNPrimes(0));  // => []
+// console.log(firstNPrimes(1));  // => [2]
+// console.log(firstNPrimes(4));  // => [2, 3, 5, 7]
+
+
+
+
+// function peakFinder(arr) {
+//     let arrs = [];
+
+//     for (let i = 0; i < arr.length; i += 1) {
+//         if((arr[i - 1] == undefined && arr[i + 1] < arr[i]) || (arr[i - 1] < arr[i] && arr[i + 1] == undefined)) {
+//             arrs.push(i);
+//         } else if(arr[i - 1] < arr[i] && arr[i] > arr[i + 1]) {
+//             arrs.push(i);
+//         }
+//     }
+
+   
+//     return arrs;
+// }
+
+
+
+
+// console.log(peakFinder([1, 2, 3, 2, 1])); // => [2]
+// console.log(peakFinder([2, 1, 2, 3, 4, 5])); // => [0, 5]
+// console.log(peakFinder([4, 6, 9, 4, 2, -7, 2, -4, 5])); // => [2, 6, 8]
+
+
