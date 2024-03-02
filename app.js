@@ -635,3 +635,149 @@
 // console.log(pairProduct([1, 2, 3, 4, 5], 8)); // => [ [ 1, 3 ] ]
 // console.log(pairProduct([1, 2, 3, 12, 8], 24)); // => [ [ 1, 3 ], [ 2, 4 ] ]
 
+
+// function twoDimensionalSize(array) {
+//     let count = 0;
+//     for(let i = 0; i < array.length; i += 1) {
+//         for(let j = 0; j < array[i].length; j += 1) {
+//             count += 1;
+//         }
+//     }
+
+//     return count;
+// }
+
+
+
+
+
+// const arr1 = [
+//     [1, 2, 3],
+//     [4, 5],
+//     [6, 7, 8, 9]
+//   ];
+//   console.log(twoDimensionalSize(arr1));  // => 9
+  
+//   const arr2 = [
+//     ['a'],
+//     ['b', 'c', 'd', 'e']
+//   ];
+//   console.log(twoDimensionalSize(arr2));  // => 5
+
+
+// function longWordCount(string) {
+//     let count = 0;
+//     let strArr = string.split(" ");
+//     for(let i = 0; i < strArr.length; i += 1) {
+//         if (strArr[i].length > 7) {
+//             count += 1;
+//         }
+//     }
+
+//     return count;
+// }
+
+
+
+// console.log(longWordCount(""));  // => 0
+// console.log(longWordCount("short words only"));  // => 0
+// console.log(longWordCount("one reallylong word"));  // => 1
+// console.log(longWordCount("two reallylong words inthisstring"));  // => 2
+// console.log(longWordCount("allwordword longwordword wordswordword"));  // => 3
+// console.log(longWordCount("seventy schfifty five"));  // => 1
+
+
+// function lcm(num1, num2) {
+//     for(let i = 2; i < num1 * num2 + 1; i += 1) {
+//         if(i % num1 === 0 && i % num2 === 0) {
+//             return i;
+//         }
+//     }
+// }
+
+
+
+// console.log(lcm(2, 3));  // => 6
+// console.log(lcm(6, 10));  // => 30
+// console.log(lcm(24, 26));  // => 312
+
+
+function hipsterfyWord(word) {
+    let str = word.split("").reverse();
+    for(let i = 0; i < str.length; i += 1) {
+        if("aeiou".includes(str[i]) || "AEIOU".includes(str[i])) {
+            str.splice(i, 1);
+            break;
+        }
+
+    }
+
+    return str.reverse().join('');
+
+}
+
+
+
+
+
+// console.log(hipsterfyWord('proper')) // => 'propr'
+// console.log(hipsterfyWord('tonic')) // => 'tonc'
+// console.log(hipsterfyWord('PANTHER')) // => 'PANTHR'
+// console.log(hipsterfyWord('BACKWARDS')) // => 'BACKWRDS'
+
+
+
+// function hipsterfy(sentence) {
+
+//     return sentence.split(' ').map(word => hipsterfyWord(word)).join(" ");
+
+
+// }
+
+
+
+
+
+// console.log(hipsterfy("proper"));  // => "propr"
+// console.log(hipsterfy("proper tonic panther"));  // => "propr tonc panthr"
+// console.log(hipsterfy("towel flicker banana"));  // => "towl flickr banan"
+// console.log(hipsterfy("runner anaconda"));  // => "runnr anacond"
+// console.log(hipsterfy("turtle cheeseburger fries"));  // => "turtl cheeseburgr fris"
+
+
+// function objectToString(obj) {
+//     let str = "";
+
+//     for(let key in obj) {
+//         str += key.repeat(obj[key]);
+//     }
+
+//     return str;
+// }
+
+
+
+
+
+// console.log(objectToString({ a : 2, b: 4, c: 1 })) // => 'aabbbbc'
+// console.log(objectToString({ b: 1, o: 2, t: 1 })) // => 'boot'
+
+// function shortestWord(sentence) {
+//     let nSentence = sentence.split(" ");
+//     let shortestWord = nSentence[0];
+
+//     for(let i = 0; i < nSentence.length; i += 1) {
+//         if(nSentence[i].length < shortestWord.length) {
+//             shortestWord = nSentence[i];
+//         }
+//     }
+
+//     return shortestWord;
+
+// }
+
+
+
+// console.log(shortestWord('app academy is cool')) // => 'is'
+// console.log(shortestWord('programming bootcamp')) // => 'bootcamp'
+
