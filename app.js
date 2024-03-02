@@ -517,3 +517,121 @@
 // const array3 = ['a', 'ab', 'c', 'd', 'c']
 // const array4 = ['d']
 // console.log(arrayDiff(array3, array4))  // => ['a', 'ab', 'c', 'c']
+
+
+// function valueCounter(obj, name) {
+
+//     let count = 0;
+
+//     for (let key in obj) {
+//         if (obj[key] == name) {
+//             count += 1;
+//         }
+//         // console.log(key);
+//     }
+
+//     return count;
+// }
+
+
+
+
+
+
+// const obj1 = { 1: 'Anne', 2: 'Alvin', 3: 'Anne', 4: 'Anne' }
+// console.log(valueCounter(obj1, 'Anne'))  // => 3
+
+// const obj2 = { Anne: 50, Alvin: 1, JJ: 100, Roman: 100 }
+// console.log(valueCounter(obj2, 88))  // => 0
+
+// const pairs = { Anne: 'Roman', Alvin: 'Roman', JJ: 'Anne', Roman: 'Anne' }
+// console.log(valueCounter(pairs, 'Roman'))  // => 2
+
+
+// function elementCount(array) {
+//     let obj = {};
+
+//     for(let i = 0; i < array.length; i += 1) {
+//         if(obj[array[i]]) {
+//             obj[array[i]] += 1;
+//         } else {
+//             obj[array[i]] = 1
+//         }
+//     }
+
+//     return obj;
+// }
+
+
+// console.log(elementCount(["a", "a", "b", "b"])); // => { "a" : 2, "b" : 2 }
+// console.log(elementCount(['c', 'a', 'c', 'a', 'b'])); // => { "c": 2, "a": 2, "b": 1 }
+
+// function isPrime(number) {
+
+//     for (let i = 2; i < number; i += 1) {
+//         if (number % i === 0) {
+//             return false;
+//         }
+//     }
+
+//     return true;
+// }
+
+
+// function nextTwoPrimes(num) {
+//     let arr = [];
+
+//     for (let i = num + 1; i < num * (num * 2) ; i += 1) {
+//         if(arr.length < 2) {
+//             if(isPrime(i)) {
+//                 arr.push(i);
+//             }
+//         } else {
+//             break;
+//         }
+//     }
+
+//     return arr;
+// }
+
+
+
+
+
+
+
+// console.log(nextTwoPrimes(2));  // => [ 3, 5 ]
+// console.log(nextTwoPrimes(3));  // => [ 5, 7 ]
+// console.log(nextTwoPrimes(7));  // => [ 11, 13 ]
+// console.log(nextTwoPrimes(8));  // => [ 11, 13 ]
+// console.log(nextTwoPrimes(20));  // => [ 23, 29 ]
+// console.log(nextTwoPrimes(97));  // => [ 101, 103 ]
+
+
+
+// function pairProduct(arr, num) {
+//     let arrs = [];
+//     for(let i = 0; i < arr.length; i += 1) {
+//         let nArr = [];
+//         for(let j = i + 1; j < arr.length; j += 1 ) {
+            
+//             if ((arr[i] * arr[j]) == num) {
+//                 arrs.push([i, j]);
+//             }
+//         }
+//         if(nArr.length == 0) {
+//             continue;
+//         }
+        
+//     }
+
+//     return arrs;
+// }
+
+
+
+
+// console.log(pairProduct([1, 2, 3, 4, 5], 4)); // => [ [ 0, 3 ] ]
+// console.log(pairProduct([1, 2, 3, 4, 5], 8)); // => [ [ 1, 3 ] ]
+// console.log(pairProduct([1, 2, 3, 12, 8], 24)); // => [ [ 1, 3 ], [ 2, 4 ] ]
+
