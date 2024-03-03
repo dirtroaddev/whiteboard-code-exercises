@@ -781,3 +781,176 @@ function hipsterfyWord(word) {
 // console.log(shortestWord('app academy is cool')) // => 'is'
 // console.log(shortestWord('programming bootcamp')) // => 'bootcamp'
 
+
+// function greatestCommonFactor(num1, num2) {
+//     for(let i = num1 * num2; i > 0; i -= 1) {
+//         if(num1 % i === 0 && num2 % i === 0) {
+//             return i;
+//         }
+//     }
+// }
+
+
+
+
+// console.log(greatestCommonFactor(15, 25)) // => 5
+// console.log(greatestCommonFactor(16, 24)) // => 8
+// console.log(greatestCommonFactor(7, 11)) // => 1
+
+
+// function isPassing(array) {
+//     let avg = 0;
+//     for (let i = 0; i < array.length; i += 1) {
+//         avg += array[i].score;
+//     }
+
+
+//     return avg / array.length > 70;
+// }
+
+
+
+
+
+
+// const assessments1 = [
+//     { number: 1, score: 60 },
+//     { number: 2, score: 90 },
+//     { number: 3, score: 80 },
+//     { number: 4, score: 100 },
+//     { number: 5, score: 85 }
+//   ];
+  
+//   console.log(isPassing(assessments1)) // => true
+//   const assessments2 = [
+//     { number: 1, score: 60 },
+//     { number: 2, score: 20 },
+//     { number: 3, score: 45 }
+//   ];
+  
+//   console.log(isPassing(assessments2)) // => false
+
+
+
+
+// function valueConcat(array, obj) {
+//     let arr = [];
+//     let nextArr = []
+    
+
+//     for(let i = 0; i < array.length; i += 1) {
+
+//         if(obj.hasOwnProperty(array[i])) {
+//             arr.push(array[i] + obj[array[i]] );
+//         } else {
+//             arr.push(array[i]);
+//         }
+        
+//     }
+
+//     return arr;
+    
+// }
+
+
+// const arr = ['alex', 'maurice', 'meagan', 'ali'];
+// const obj = { alex: 'bronca', ali: 'harris' }
+// console.log(valueConcat(arr, obj)) // => [ 'alexbronca', 'maurice', 'meagan', 'aliharris' ]
+
+// console.log(valueConcat(['a', 'b', 'c'], { b: 2, c: 3 })) // => [ 'a', 'b2', 'c3' ]
+
+
+
+// function threeInARow(array) {
+//     for (let i = 0; i < array.length; i += 1) {
+//         if(array[i - 1] === array[i] && array[i] === array[i + 1]) {
+//             return true;
+//         }
+//     }
+
+//     return false;
+// }
+
+
+
+
+
+
+// console.log(threeInARow([4, 3, 7, 7, 7, 13, 8]));  // => true;
+// console.log(threeInARow([10, 9, 20, 33, 3, 3]));  // => false;
+
+
+
+// function variableNameify(arr) {
+
+//     str = [arr[0].toLowerCase()];
+
+//     for (let i = 1; i < arr.length; i += 1) {
+        
+//         let firstLetters = arr[i].toLowerCase().split("").splice(0, 1).join();
+//         let lastPart = arr[i].toLowerCase().split("").splice(1).join('');
+//         str.push(firstLetters.toUpperCase() + lastPart);
+//     }
+
+//     return str.join('');
+// }
+
+
+
+
+
+// console.log(variableNameify(['is', 'prime'])) // => 'isPrime'
+// console.log(variableNameify(['remove', 'last', 'vowel'])) // => 'removeLastVowel'
+// console.log(variableNameify(['MaX', 'VALUE'])) // => 'maxValue'
+
+
+
+// function threeIncreasing(arr) {
+//     for(let i = 0; i < arr.length; i += 1 ) {
+//         if(arr[i + 1] == arr[i] + 1 && arr[i + 2] == arr[i] + 2) {
+//             return true;
+//         }
+//     }
+
+//     return false;
+// }
+
+
+
+
+// console.log(threeIncreasing([3, 2, 11, 12, 13, 2, 4]));  // => true
+// console.log(threeIncreasing([7, 2, 4, 5, 2, 1, 6]));  // => false
+
+
+// function reverse2D(arr) {
+//     let str = "";
+//     for(let i =  arr.length - 1; i >= 0;  i -= 1) {
+//         for(let j = arr[i].length - 1; j >= 0; j -= 1) {
+            
+//             str += arr[i][j];
+//         }
+
+
+        
+//     }
+
+//     return str;
+// }
+
+
+
+
+
+
+// const arr1 = [
+//     ['a', 'b', 'c', 'd'],
+//     ['e', 'f'],
+//     ['g', 'h', 'i']
+//   ];
+  
+//   console.log(reverse2D(arr1)) // => 'ihgfedcba'
+//   const arr2 = [
+//     ['Julian', 'Matt', 'Mike'],
+//     ['Oscar', 'Patrick']
+//   ];
+//   console.log(reverse2D(arr2)) // => 'PatrickOscarMikeMattJulian'
