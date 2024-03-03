@@ -1008,3 +1008,50 @@ function hipsterfyWord(word) {
 // console.log(countRepeats('hellobootcampprep')); // => 4
 
 
+
+
+// function pairsToString(array) {
+//     let obj = {};
+//     let str = ""
+//     for(let i = 0; i < array.length; i += 1) {
+        
+//         str += array[i][0].repeat(array[i][1])
+    
+//     }
+
+//     return str;
+// }
+
+
+// const array1 = [
+//     ['a', 3],
+//     ['b', 1],
+//     ['c', 2]
+//   ];
+//   console.log(pairsToString(array1));  // => 'aaabcc'
+  
+//   const array2 = [
+//     ['f', 1],
+//     ['o', 2],
+//     ['d', 1],
+//     ['!', 1]
+//   ];
+//   console.log(pairsToString(array2));  // => 'food!'
+
+
+// function countAdjacentSums(array, num) {
+//     let count = 0;
+//     for(let i = 0; i < array.length; i += 1) {
+//         for(let j = i + 1; j < array.length; j += 1) {
+//             if(array[i] + array[j] == num) {
+//                 count += 1;
+//             }
+//         }
+//     }
+//     return count;
+// }
+
+
+// console.log(countAdjacentSums([1, 5, 1], 6)) // => 2
+// console.log(countAdjacentSums([7, 2, 4, 6], 7)) // => 0
+// console.log(countAdjacentSums([6, 7, 11, 2, 5, 10, 3], 13)) // => 3
