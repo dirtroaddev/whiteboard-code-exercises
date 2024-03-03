@@ -954,3 +954,57 @@ function hipsterfyWord(word) {
 //     ['Oscar', 'Patrick']
 //   ];
 //   console.log(reverse2D(arr2)) // => 'PatrickOscarMikeMattJulian'
+
+
+
+// function reverb(word) {
+//     let str = "";
+
+//     for(let i = word.length - 1; i >- 0; i -= 1) {
+//         if("aeiou".includes(word[i])) {
+//             let restWord = word.slice(i);
+//             return word + restWord;
+//         }
+//     }
+
+//     return word;
+// }
+
+
+
+
+// console.log(reverb('running'));  // => 'runninging'
+// console.log(reverb('wild'));  // => 'wildild'
+// console.log(reverb('debugged'));  // => 'debuggeded'
+// console.log(reverb('my'));  // => 'my'
+
+
+// function countRepeats(word) {
+
+//     let obj = {};
+//     let count = 0;
+//     for (let i = 0; i < word.length; i += 1) {
+//         if(obj[word[i]]) {
+//             obj[word[i]] += 1
+
+//         } else {
+//             obj[word[i]] = 1;
+//          }
+//     }
+
+//     for (let key in obj) {
+//         if(obj[key] > 1) {
+//             count += 1;
+//         }
+//     }
+
+//     return count;
+// }
+
+// console.log(countRepeats('calvin')); // => 0
+// console.log(countRepeats('caaaalvin')); // => 1
+// console.log(countRepeats('pops')); // => 1
+// console.log(countRepeats('mississippi')); // => 3
+// console.log(countRepeats('hellobootcampprep')); // => 4
+
+
