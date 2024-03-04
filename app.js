@@ -1272,11 +1272,136 @@ function hipsterfyWord(word) {
 // console.log(threeUniqueVowels('go home'));  // => false
 
 
+// function vowelShift(sentence) {
+//     let vowels = "aeiou";
+//     let str = "";
+    
+//     for(let i = 0; i < sentence.length; i += 1) {
+//         if(vowels.includes(sentence[i])) {
+//             let idx = vowels.indexOf(sentence[i]);
+//             if(vowels[idx + 1] == undefined) {
+//                 str += vowels[0]
+//             } else {
+//                 str += vowels[idx + 1]
+//             }
+//         } else {
+//             str += sentence[i];
+//         }
+//     }
+    
+    
+
+//     return str;
+// }
+
+
+// console.log(vowelShift('bootcamp'));  // => 'buutcemp'
+// console.log(vowelShift('hello world'));  // => 'hillu wurld'
+// console.log(vowelShift('on the hunt'));  // => 'un thi hant'
 
 
 
+// function hasSymmetry(arr) {
+//     let len = Math.floor(arr.length / 2);
+//     let firsthalf;
+//     if(len % 2 == 0) {
+//         firstHalf = arr.slice(0, len)
+//     } else {
+//         firstHalf = arr.slice(0, len - 1)
+//     }
+    
+//     let secHalf = arr.slice(len + 1).reverse();
+
+//     for (let i = 0; i < firstHalf.length; i += 1) {
+//         if(firstHalf[i] !== secHalf[i]) {
+//             return false;
+//         }
+
+        
+//     }
+
+//     return true;
+// }
 
 
-vowelShift('bootcamp');  // => 'buutcemp'
-vowelShift('hello world');  // => 'hillu wurld'
-vowelShift('on the hunt');  // => 'un thi hant'
+// console.log(hasSymmetry([1, 2, 3, 3, 2, 1])) // => true
+// console.log(hasSymmetry([1, 2, 3, 3, 4, 1])) // => false
+// console.log(hasSymmetry(['cat', 'dog', 'bird', 'dog', 'cat'])) // => true
+// console.log(hasSymmetry(['cat', 'dog', 'bird', 'bird', 'cat'])) // => false
+
+
+
+// function evenSumArray(arr) {
+//     let sum = 0;
+//     let sumArr = [];
+//     for (let i = 0; i < arr.length; i += 1) {
+//         for (let j = 0; j <= arr[i]; j += 1) {
+//             if(j % 2 == 0) {
+//                 sum += j;
+//             }
+            
+//         }
+
+//         sumArr.push(sum);
+//         sum = 0;
+//     }
+
+//     return sumArr;
+// }
+
+
+// console.log(evenSumArray([6, 7, 5])) // => [ 12, 12, 6 ]
+// console.log(evenSumArray([2, 8, 3, 5])) // => [ 2, 20, 2, 6 ]
+
+
+
+// function numsToWords(string) {
+//     let str = "";
+//     let nums = string.split('');
+//     let numbers = {
+//         1: "One",
+//         2: "Two",
+//         3: "Three",
+//         4: "Four",
+//         5: "Five",
+//         6: "Six",
+//         7: "Seven",
+//         8: "Eight",
+//         9: "Nine",
+        
+//     }
+
+//     for (let i = 0; i < nums.length; i += 1) [
+//         str += numbers[parseInt(nums[i])]
+//     ]
+
+//     return str;
+// }
+
+
+// console.log(numsToWords('42')) // => 'FourTwo'
+// console.log(numsToWords('123')) // => 'OneTwoThree'
+// console.log(numsToWords('159598')) // => 'OneFiveNineFiveNineEight'
+
+
+
+// function moreDotLessDash(string) {
+//     let dots = 0;
+//     let dashes = 0;
+
+//     for(let i = 0; i < string.length; i += 1) {
+//         if(string[i] == '-') {
+//             dashes += 1;
+//         } else if(string[i] == '.') {
+//             dots += 1;
+//         }
+//     }
+
+//     return dots > dashes;
+// }
+
+
+// console.log(moreDotLessDash('2-D arrays are fun. I think.'));  // => true
+// console.log(moreDotLessDash('.-.-.'));  // => true
+// console.log(moreDotLessDash('.-'));  // => false
+// console.log(moreDotLessDash('..--'));  // => false
