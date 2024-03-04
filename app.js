@@ -1055,3 +1055,228 @@ function hipsterfyWord(word) {
 // console.log(countAdjacentSums([1, 5, 1], 6)) // => 2
 // console.log(countAdjacentSums([7, 2, 4, 6], 7)) // => 0
 // console.log(countAdjacentSums([6, 7, 11, 2, 5, 10, 3], 13)) // => 3
+
+
+// function signFlipCount(array) {
+//     let count = 0;
+
+//     for (let i = 0; i < array.length; i += 1) {
+//         if((array[i] > 0 && array[i+1]< 0) || (array[i] < 0 && array[i + 1] > 0) ) {
+//             count += 1;
+//         }
+//     }
+
+//     return count;
+// }
+
+
+
+// console.log(signFlipCount([5, 6, 10, 3])); // => 0
+// console.log(signFlipCount([-12, 0, -3, -5])); // => 0
+// console.log(signFlipCount([-12, 10, -3, -5])); // => 2
+// console.log(signFlipCount([1, -2, -3, -4])); // => 1
+// console.log(signFlipCount([-1, 11.3, -3, 100])); // => 3
+
+
+// function powerSequence(num1, num2) {
+//     let arr = [num1];
+
+//     for (let i = 1; i < num2; i += 1) {
+//         if(arr.length < 1) {
+//             arr.push(arr[i] * arr[i]);
+//         } else {
+//             arr.push(arr[i - 1] * num1);
+//         }
+        
+//     }
+
+
+//     return arr;
+// }
+
+
+
+
+// console.log(powerSequence(3, 4));  // => [ 3, 9, 27, 81 ]
+// console.log(powerSequence(2, 6));  // => [ 2, 4, 8, 16, 32, 64 ]
+// console.log(powerSequence(8, 3));  // => [ 8, 64, 512 ]
+
+
+// function remDoubles(word) {
+//     let arr = [];
+
+//     for(let i = 0; i < word.length; i += 1) {
+//         if( word[i] !== word[i + 1]) {
+//             arr.push(word[i]);
+//         } else {
+//             continue;
+//         }
+
+//     }
+
+//     return arr.join('');
+// }
+
+
+// function collapseString(sentence) {
+//     let sentArr = sentence.split(' ');
+    
+//     let arr = [];
+
+//     for (let i = 0; i < sentArr.length; i += 1) {
+//         if(sentArr[i].length > 0) {
+
+//             arr.push(remDoubles(sentArr[i]));
+//         }
+//     }
+//     return arr.join(' ');
+// }
+
+
+// console.log(collapseString('apple')); // => 'aple'
+// console.log(collapseString('AAAaalviiiiin!!!')); // => 'Aalvin!'
+// console.log(collapseString('hello   app academy')); // => 'helo ap academy'
+
+
+// function oddWordsOut(sentence) {
+    
+
+//     return sentence.split(' ').filter(word => word.length % 2 == 0).join(' ');
+
+// }
+
+
+// console.log(oddWordsOut('go to the store and buy milk'));  // => 'go to milk'
+// console.log(oddWordsOut('what is the answer'));  // => 'what is answer'
+
+
+// function mindPsAndQs(sentence) {
+
+//     let count = 0;
+//     let streak = 0;
+
+//     for (let i = 0; i < sentence.length; i += 1) {
+//         if(sentence[i] == "P" || sentence[i] == "Q") {
+//             count += 1;
+//             streak = count;
+//         } else {
+            
+            
+//             count = 0;
+           
+//         }
+        
+//     }
+//     return streak;
+
+// }
+
+
+// console.log(mindPsAndQs('BOOTCAMP'));  // => 1
+// console.log(mindPsAndQs('APCDQQPPC'));  // => 4
+// console.log(mindPsAndQs('PQPQ'));  // => 4
+// console.log(mindPsAndQs('PPPXQPPPQ'));  // => 5
+
+
+
+// function commonFactors(num1, num2) {
+//     let arr = [];
+
+//     for (let i = 0; i < num2; i += 1) {
+//         if(num1 % i == 0 && num2 % i == 0) {
+//             arr.push(i);
+//         }
+//     }
+
+//     return arr;
+// }
+
+
+// console.log(commonFactors(12, 50));  // => [ 1, 2 ]
+// console.log(commonFactors(6, 24));  // => [ 1, 2, 3, 6 ]
+// console.log(commonFactors(11, 22));  // => [ 1, 11 ]
+// console.log(commonFactors(45, 60));  // => [ 1, 3, 5, 15 ]
+
+
+
+
+// function isPrime(number) {
+
+//     for (let i = 2; i < number; i += 1) {
+//         if (number % i === 0) {
+//             return false;
+//         }
+//     }
+
+//     return true;
+// }
+
+// function commonPrimeFactors(num1, num2) {
+//     let arr = [];
+
+//     for (let i = 2; i < num2; i += 1) {
+//         if(num1 % i == 0 && num2 % i == 0) {
+//             if(isPrime(i)) {
+//                 arr.push(i);
+//             }
+            
+//         }
+//     }
+
+//     return arr;
+// }
+
+
+// console.log(commonPrimeFactors(12, 50));  // => [ 2 ]
+// console.log(commonPrimeFactors(6, 24));  // => [ 2, 3 ]
+// console.log(commonPrimeFactors(11,22));  // => [ 11 ]
+// console.log(commonPrimeFactors(45, 60));  // => [ 3, 5 ]
+
+
+// function splitHalfArray(array) {
+//     let split = Math.floor(array.length / 2);
+//     if(split % 2 !== 0) {
+//         return [array.slice(0, split), array.slice(split)]
+//     } else {
+//         return [array.slice(0, split), array.slice(split + 1)]
+//     }
+    
+// }
+
+
+// console.log(splitHalfArray([1, 2, 3, 4, 5]));
+//   // => [ [ 1, 2 ], [ 4, 5 ] ]
+
+// console.log(splitHalfArray(['a', 'b', 'c', 'd', 'e', 'f']));
+//   // => [ [ 'a', 'b', 'c' ], [ 'd', 'e', 'f' ] ]
+
+// function threeUniqueVowels(word) {
+//     let arr = word.split('');
+//     let nSet = new Set(arr);
+//     let finArr = [...nSet];
+//     let count = 0;
+//     for (let i = 0; i < finArr.length; i += 1) {
+//         if("aeiou".includes(finArr[i])) {
+//             count += 1;
+//         }
+//     }
+
+//     return count >= 3;
+// }
+
+
+// console.log(threeUniqueVowels('delicious'));  // => true
+// console.log(threeUniqueVowels('the bootcamp'));  // => true
+// console.log(threeUniqueVowels('bootcamp'));  // => false
+// console.log(threeUniqueVowels('dog'));  // => false
+// console.log(threeUniqueVowels('go home'));  // => false
+
+
+
+
+
+
+
+vowelShift('bootcamp');  // => 'buutcemp'
+vowelShift('hello world');  // => 'hillu wurld'
+vowelShift('on the hunt');  // => 'un thi hant'
